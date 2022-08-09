@@ -124,9 +124,32 @@ body {
     margin-right: 10px;
 }
 
+/*FOOTER*/
+footer {
+    color: #201e1f;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #201e1f;
+    transition: all ease-in 0.1s;
+}
+
+footer a:hover {
+    color: #3330E4;
+}
+
+/*RESPONSIBILITY*/
 @media only screen and (max-width: 370px) {
     .stopwatch-to-menu {
         margin-top: 10px;
+    }
+
+    footer a {
+        text-decoration: underline;
     }
 }
 
