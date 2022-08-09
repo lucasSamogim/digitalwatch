@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Watch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <h1 class="watch__title">Digital Watch</h1>
+
+    <div class="watch__container">
+        <div class="watch__menu--container">
+            <button class="clock-btn">
+                <img src="./images/clock.png" alt="" width="34" height="34" />
+                Clock
+            </button>
+            <button class="stopwatch-btn">
+                <img src="./images/stopwatch.png" alt="" width="34" height="34" />
+                Stopwatch
+            </button>
+        </div>
+        <div class="watch__clock-area">
+            <h1 class="realtime-clock">00:00:00</h1>
+            <button class="menu-btn clock-to-menu">
+                MENU
+            </button>
+        </div>
+        <div class="watch__stopwatch--area">
+            <h1 class="stopwatch--clock">00:00:00</h1>
+            <div class="btns__flex--area">
+                <button class="start-btn">START</button>
+                <button class="pause-btn">PAUSE</button>
+                <button class="reset-btn">RESET</button>
+                <button class="menu-btn stopwatch-to-menu">MENU</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

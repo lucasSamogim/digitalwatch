@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BACKGROUND*/
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    font-family: 'Advent Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*TITLE*/
+.watch__title {
+    color: #201e1f;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*WATCH CONTAINER*/
+.watch__container {
+    width: 95vw;
+    height: 200px;
+    background: rgba(236, 236, 236,.3);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   }
+/*MENU CONTAINER*/
+.watch__menu--container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*REALTIME CLOCK AREA*/
+.watch__clock-area {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 32px;
+}
+
+/*STOPWATCH CLOCK AREA*/
+.watch__stopwatch--area {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 32px;
+}
+
+.btns__flex--area {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*MENU BUTTONS*/
+.clock-btn,
+.stopwatch-btn,
+.menu-btn,
+.start-btn,
+.pause-btn,
+.reset-btn {
+    color: #FFF;
+    padding: 8px 20px;
+    border: none;
+    background: #1A1A2E;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px #AAA;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.menu-btn {
+    background-color: #1E5128;
+}
+
+.clock-btn img,
+.stopwatch-btn img {
+    margin-right: 10px;
+}
+
+/*CLOCK MENU BUTTON*/
+.clock-to-menu {
+    padding: 15px 30px;
+    font-size: 18px;  
+}
+
+/*STOPWATCH MENU BUTTON*/
+
+
+.start-btn {
+    background-color: #3330E4;
+    margin-right: 10px;
+}
+
+.pause-btn {
+    background-color: #F58634;
+    margin-right: 10px;
+}
+
+.reset-btn {
+    background-color: #F90716;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 370px) {
+    .stopwatch-to-menu {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 440px) {
+    .watch__container {
+        width: 400px;
+    }
+}
